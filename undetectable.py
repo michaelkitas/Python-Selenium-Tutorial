@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     options = webdriver.ChromeOptions()
     #options.add_argument('proxy-server=106.122.8.54:3128')
-    options.add_argument('--user-data-dir=C:\Users\suppo\AppData\Local\Google\Chrome\User Data\Default')
+    #options.add_argument(r'--user-data-dir=C:\Users\suppo\AppData\Local\Google\Chrome\User Data\Default')
 
     browser = uc.Chrome(
         options=options,
