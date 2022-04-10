@@ -29,6 +29,8 @@ else:
     WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.ID, 'simple-captcha-field')))
     browser.find_element(By.ID, 'simple-captcha-field').send_keys(code)
 
+    browser.find_element(By.CLASS_NAME, "button-primary").click()
+
     browser.find_element(By.XPATH, '//*[@id="root"]/div/main/div/section/form/button[1]').click()
 
 time.sleep(120)
